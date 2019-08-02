@@ -44,5 +44,12 @@ urlpatterns = [
     path('linear-algebra/matrix-info/transpose', views.linear_algebra_info_transpose, name="linear_algebra_info_transpose"), # new
     path('linear-algebra/matrix-info/inverse', views.linear_algebra_info_inverse, name="linear_algebra_info_inverse"), # new
     path('linear-algebra/matrix-info/linear-independence', views.linear_algebra_info_LI, name="linear_algebra_info_LI"), # new
-    path('geometry', views.geometry, name="geometry") # new
+    path('geometry', views.geometry, name="geometry")
+    path('geometry/area', views.geometry_area, name="geometry_area") # new
+    path('geometry/perimeter', views.geometry_perimeter, name="geometry_perimeter")
+    path('geometry/triangles', views.geometry_triangles, name="geometry_triangles")
+    path('geometry/triangles/missingLen', views.geometry_triangles_missingLen, name="geometry_triangles_missingLen")
+    path('geometry/triangles/missingAng', views.geometry_triangles_missingAng, name="geometry_triangles_missingAng")
+    path('geometry/triangles/compareTri', views.geometry_triangles_compareTri, name="geometry_triangles_compareTri")
+    path('geometry/arclength-circle', views.geometry_arclength_circle, name="geometry_arclength_circle")
 ]
